@@ -1,0 +1,443 @@
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=css-1&folderName=ui-%D0%BB%D0%B5%D0%B3%D0%BA%D0%BE%D1%81%D1%82%D1%8C&cornerRadiusShadow=5px&offsetLeftShadow=-5px&offsetTopShadow=-5px&thicknessShadow=5px&opacityShadow=20&bgImgOpacityShadow=10&bgTextureShadow=flat&bgColorShadow=000000&opacityOverlay=50&bgImgOpacityOverlay=20&bgTextureOverlay=diagonals_thick&bgColorOverlay=666666&iconColorError=ffd27a&fcError=ffffff&borderColorError=cd0a0a&bgImgOpacityError=18&bgTextureError=diagonals_thick&bgColorError=b81900&iconColorHighlight=228ef1&fcHighlight=363636&borderColorHighlight=fed22f&bgImgOpacityHighlight=75&bgTextureHighlight=highlight_soft&bgColorHighlight=ffe45c&iconColorActive=ef8c08&fcActive=eb8f00&borderColorActive=fbd850&bgImgOpacityActive=65&bgTextureActive=glass&bgColorActive=ffffff&iconColorHover=ef8c08&fcHover=c77405&borderColorHover=fbcb09&bgImgOpacityHover=100&bgTextureHover=glass&bgColorHover=fdf5ce&iconColorDefault=ef8c08&fcDefault=1c94c4&borderColorDefault=cccccc&bgImgOpacityDefault=100&bgTextureDefault=glass&bgColorDefault=f6f6f6&iconColorContent=222222&fcContent=333333&borderColorContent=dddddd&bgImgOpacityContent=100&bgTextureContent=highlight_soft&bgColorContent=eeeeee&iconColorHeader=ffffff&fcHeader=ffffff&borderColorHeader=e78f08&bgImgOpacityHeader=35&bgTextureHeader=gloss_wave&bgColorHeader=f6a828&cornerRadius=4px&fsDefault=1.1em&fwDefault=bold&ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif
+ */
+
+
+/* Component containers
+----------------------------------*/
+css-1 .ui-widget {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+css-1 .ui-widget .ui-widget {
+	font-size: 1em;
+}
+css-1 .ui-widget input,
+css-1 .ui-widget select,
+css-1 .ui-widget textarea,
+css-1 .ui-widget button {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+css-1 .ui-widget.ui-widget-content {
+	border: 1px solid #cccccc;
+}
+css-1 .ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #eeeeee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+	color: #333333;
+}
+css-1 .ui-widget-content a {
+	color: #333333;
+}
+css-1 .ui-widget-header {
+	border: 1px solid #e78f08;
+	background: #f6a828 url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+}
+css-1 .ui-widget-header a {
+	color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+css-1 .ui-state-default,
+css-1 .ui-widget-content .ui-state-default,
+css-1 .ui-widget-header .ui-state-default,
+css-1 .ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html css-1 .ui-button.ui-state-disabled:hover,
+html css-1 .ui-button.ui-state-disabled:active {
+	border: 1px solid #cccccc;
+	background: #f6f6f6 url("images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1c94c4;
+}
+css-1 .ui-state-default a,
+css-1 .ui-state-default a:link,
+css-1 .ui-state-default a:visited,
+acss-1 .ui-button,
+a:linkcss-1 .ui-button,
+a:visitedcss-1 .ui-button,
+css-1 .ui-button {
+	color: #1c94c4;
+	text-decoration: none;
+}
+css-1 .ui-state-hover,
+css-1 .ui-widget-content .ui-state-hover,
+css-1 .ui-widget-header .ui-state-hover,
+css-1 .ui-state-focus,
+css-1 .ui-widget-content .ui-state-focus,
+css-1 .ui-widget-header .ui-state-focus,
+css-1 .ui-button:hover,
+css-1 .ui-button:focus {
+	border: 1px solid #fbcb09;
+	background: #fdf5ce url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #c77405;
+}
+css-1 .ui-state-hover a,
+css-1 .ui-state-hover a:hover,
+css-1 .ui-state-hover a:link,
+css-1 .ui-state-hover a:visited,
+css-1 .ui-state-focus a,
+css-1 .ui-state-focus a:hover,
+css-1 .ui-state-focus a:link,
+css-1 .ui-state-focus a:visited,
+acss-1 .ui-button:hover,
+acss-1 .ui-button:focus {
+	color: #c77405;
+	text-decoration: none;
+}
+
+css-1 .ui-visual-focus {
+	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
+}
+css-1 .ui-state-active,
+css-1 .ui-widget-content .ui-state-active,
+css-1 .ui-widget-header .ui-state-active,
+acss-1 .ui-button:active,
+css-1 .ui-button:active,
+css-1 .ui-button.ui-state-active:hover {
+	border: 1px solid #fbd850;
+	background: #ffffff url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #eb8f00;
+}
+css-1 .ui-icon-background,
+css-1 .ui-state-active .ui-icon-background {
+	border: #fbd850;
+	background-color: #eb8f00;
+}
+css-1 .ui-state-active a,
+css-1 .ui-state-active a:link,
+css-1 .ui-state-active a:visited {
+	color: #eb8f00;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+css-1 .ui-state-highlight,
+css-1 .ui-widget-content .ui-state-highlight,
+css-1 .ui-widget-header .ui-state-highlight {
+	border: 1px solid #fed22f;
+	background: #ffe45c url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+	color: #363636;
+}
+css-1 .ui-state-checked {
+	border: 1px solid #fed22f;
+	background: #ffe45c;
+}
+css-1 .ui-state-highlight a,
+css-1 .ui-widget-content .ui-state-highlight a,
+css-1 .ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+css-1 .ui-state-error,
+css-1 .ui-widget-content .ui-state-error,
+css-1 .ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #b81900 url("images/ui-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat;
+	color: #ffffff;
+}
+css-1 .ui-state-error a,
+css-1 .ui-widget-content .ui-state-error a,
+css-1 .ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+css-1 .ui-state-error-text,
+css-1 .ui-widget-content .ui-state-error-text,
+css-1 .ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+css-1 .ui-priority-primary,
+css-1 .ui-widget-content .ui-priority-primary,
+css-1 .ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+css-1 .ui-priority-secondary,
+css-1 .ui-widget-content .ui-priority-secondary,
+css-1 .ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+css-1 .ui-state-disabled,
+css-1 .ui-widget-content .ui-state-disabled,
+css-1 .ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+css-1 .ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+css-1 .ui-icon {
+	width: 16px;
+	height: 16px;
+}
+css-1 .ui-icon,
+css-1 .ui-widget-content .ui-icon {
+	background-image: url("images/ui-icons_222222_256x240.png");
+}
+css-1 .ui-widget-header .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+css-1 .ui-state-hover .ui-icon,
+css-1 .ui-state-focus .ui-icon,
+css-1 .ui-button:hover .ui-icon,
+css-1 .ui-button:focus .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+css-1 .ui-state-active .ui-icon,
+css-1 .ui-button:active .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+css-1 .ui-state-highlight .ui-icon,
+css-1 .ui-button .ui-state-highlight.ui-icon {
+	background-image: url("images/ui-icons_228ef1_256x240.png");
+}
+css-1 .ui-state-error .ui-icon,
+css-1 .ui-state-error-text .ui-icon {
+	background-image: url("images/ui-icons_ffd27a_256x240.png");
+}
+css-1 .ui-button .ui-icon {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+
+/* positioning */
+css-1 .ui-icon-blank { background-position: 16px 16px; }
+css-1 .ui-icon-caret-1-n { background-position: 0 0; }
+css-1 .ui-icon-caret-1-ne { background-position: -16px 0; }
+css-1 .ui-icon-caret-1-e { background-position: -32px 0; }
+css-1 .ui-icon-caret-1-se { background-position: -48px 0; }
+css-1 .ui-icon-caret-1-s { background-position: -65px 0; }
+css-1 .ui-icon-caret-1-sw { background-position: -80px 0; }
+css-1 .ui-icon-caret-1-w { background-position: -96px 0; }
+css-1 .ui-icon-caret-1-nw { background-position: -112px 0; }
+css-1 .ui-icon-caret-2-n-s { background-position: -128px 0; }
+css-1 .ui-icon-caret-2-e-w { background-position: -144px 0; }
+css-1 .ui-icon-triangle-1-n { background-position: 0 -16px; }
+css-1 .ui-icon-triangle-1-ne { background-position: -16px -16px; }
+css-1 .ui-icon-triangle-1-e { background-position: -32px -16px; }
+css-1 .ui-icon-triangle-1-se { background-position: -48px -16px; }
+css-1 .ui-icon-triangle-1-s { background-position: -65px -16px; }
+css-1 .ui-icon-triangle-1-sw { background-position: -80px -16px; }
+css-1 .ui-icon-triangle-1-w { background-position: -96px -16px; }
+css-1 .ui-icon-triangle-1-nw { background-position: -112px -16px; }
+css-1 .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+css-1 .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+css-1 .ui-icon-arrow-1-n { background-position: 0 -32px; }
+css-1 .ui-icon-arrow-1-ne { background-position: -16px -32px; }
+css-1 .ui-icon-arrow-1-e { background-position: -32px -32px; }
+css-1 .ui-icon-arrow-1-se { background-position: -48px -32px; }
+css-1 .ui-icon-arrow-1-s { background-position: -65px -32px; }
+css-1 .ui-icon-arrow-1-sw { background-position: -80px -32px; }
+css-1 .ui-icon-arrow-1-w { background-position: -96px -32px; }
+css-1 .ui-icon-arrow-1-nw { background-position: -112px -32px; }
+css-1 .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+css-1 .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+css-1 .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+css-1 .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+css-1 .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+css-1 .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+css-1 .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+css-1 .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+css-1 .ui-icon-arrowthick-1-n { background-position: 1px -48px; }
+css-1 .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+css-1 .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+css-1 .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+css-1 .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+css-1 .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+css-1 .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+css-1 .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+css-1 .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+css-1 .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+css-1 .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+css-1 .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+css-1 .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+css-1 .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+css-1 .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+css-1 .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+css-1 .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+css-1 .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+css-1 .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+css-1 .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+css-1 .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+css-1 .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+css-1 .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+css-1 .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+css-1 .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+css-1 .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+css-1 .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+css-1 .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+css-1 .ui-icon-arrow-4 { background-position: 0 -80px; }
+css-1 .ui-icon-arrow-4-diag { background-position: -16px -80px; }
+css-1 .ui-icon-extlink { background-position: -32px -80px; }
+css-1 .ui-icon-newwin { background-position: -48px -80px; }
+css-1 .ui-icon-refresh { background-position: -64px -80px; }
+css-1 .ui-icon-shuffle { background-position: -80px -80px; }
+css-1 .ui-icon-transfer-e-w { background-position: -96px -80px; }
+css-1 .ui-icon-transferthick-e-w { background-position: -112px -80px; }
+css-1 .ui-icon-folder-collapsed { background-position: 0 -96px; }
+css-1 .ui-icon-folder-open { background-position: -16px -96px; }
+css-1 .ui-icon-document { background-position: -32px -96px; }
+css-1 .ui-icon-document-b { background-position: -48px -96px; }
+css-1 .ui-icon-note { background-position: -64px -96px; }
+css-1 .ui-icon-mail-closed { background-position: -80px -96px; }
+css-1 .ui-icon-mail-open { background-position: -96px -96px; }
+css-1 .ui-icon-suitcase { background-position: -112px -96px; }
+css-1 .ui-icon-comment { background-position: -128px -96px; }
+css-1 .ui-icon-person { background-position: -144px -96px; }
+css-1 .ui-icon-print { background-position: -160px -96px; }
+css-1 .ui-icon-trash { background-position: -176px -96px; }
+css-1 .ui-icon-locked { background-position: -192px -96px; }
+css-1 .ui-icon-unlocked { background-position: -208px -96px; }
+css-1 .ui-icon-bookmark { background-position: -224px -96px; }
+css-1 .ui-icon-tag { background-position: -240px -96px; }
+css-1 .ui-icon-home { background-position: 0 -112px; }
+css-1 .ui-icon-flag { background-position: -16px -112px; }
+css-1 .ui-icon-calendar { background-position: -32px -112px; }
+css-1 .ui-icon-cart { background-position: -48px -112px; }
+css-1 .ui-icon-pencil { background-position: -64px -112px; }
+css-1 .ui-icon-clock { background-position: -80px -112px; }
+css-1 .ui-icon-disk { background-position: -96px -112px; }
+css-1 .ui-icon-calculator { background-position: -112px -112px; }
+css-1 .ui-icon-zoomin { background-position: -128px -112px; }
+css-1 .ui-icon-zoomout { background-position: -144px -112px; }
+css-1 .ui-icon-search { background-position: -160px -112px; }
+css-1 .ui-icon-wrench { background-position: -176px -112px; }
+css-1 .ui-icon-gear { background-position: -192px -112px; }
+css-1 .ui-icon-heart { background-position: -208px -112px; }
+css-1 .ui-icon-star { background-position: -224px -112px; }
+css-1 .ui-icon-link { background-position: -240px -112px; }
+css-1 .ui-icon-cancel { background-position: 0 -128px; }
+css-1 .ui-icon-plus { background-position: -16px -128px; }
+css-1 .ui-icon-plusthick { background-position: -32px -128px; }
+css-1 .ui-icon-minus { background-position: -48px -128px; }
+css-1 .ui-icon-minusthick { background-position: -64px -128px; }
+css-1 .ui-icon-close { background-position: -80px -128px; }
+css-1 .ui-icon-closethick { background-position: -96px -128px; }
+css-1 .ui-icon-key { background-position: -112px -128px; }
+css-1 .ui-icon-lightbulb { background-position: -128px -128px; }
+css-1 .ui-icon-scissors { background-position: -144px -128px; }
+css-1 .ui-icon-clipboard { background-position: -160px -128px; }
+css-1 .ui-icon-copy { background-position: -176px -128px; }
+css-1 .ui-icon-contact { background-position: -192px -128px; }
+css-1 .ui-icon-image { background-position: -208px -128px; }
+css-1 .ui-icon-video { background-position: -224px -128px; }
+css-1 .ui-icon-script { background-position: -240px -128px; }
+css-1 .ui-icon-alert { background-position: 0 -144px; }
+css-1 .ui-icon-info { background-position: -16px -144px; }
+css-1 .ui-icon-notice { background-position: -32px -144px; }
+css-1 .ui-icon-help { background-position: -48px -144px; }
+css-1 .ui-icon-check { background-position: -64px -144px; }
+css-1 .ui-icon-bullet { background-position: -80px -144px; }
+css-1 .ui-icon-radio-on { background-position: -96px -144px; }
+css-1 .ui-icon-radio-off { background-position: -112px -144px; }
+css-1 .ui-icon-pin-w { background-position: -128px -144px; }
+css-1 .ui-icon-pin-s { background-position: -144px -144px; }
+css-1 .ui-icon-play { background-position: 0 -160px; }
+css-1 .ui-icon-pause { background-position: -16px -160px; }
+css-1 .ui-icon-seek-next { background-position: -32px -160px; }
+css-1 .ui-icon-seek-prev { background-position: -48px -160px; }
+css-1 .ui-icon-seek-end { background-position: -64px -160px; }
+css-1 .ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+css-1 .ui-icon-seek-first { background-position: -80px -160px; }
+css-1 .ui-icon-stop { background-position: -96px -160px; }
+css-1 .ui-icon-eject { background-position: -112px -160px; }
+css-1 .ui-icon-volume-off { background-position: -128px -160px; }
+css-1 .ui-icon-volume-on { background-position: -144px -160px; }
+css-1 .ui-icon-power { background-position: 0 -176px; }
+css-1 .ui-icon-signal-diag { background-position: -16px -176px; }
+css-1 .ui-icon-signal { background-position: -32px -176px; }
+css-1 .ui-icon-battery-0 { background-position: -48px -176px; }
+css-1 .ui-icon-battery-1 { background-position: -64px -176px; }
+css-1 .ui-icon-battery-2 { background-position: -80px -176px; }
+css-1 .ui-icon-battery-3 { background-position: -96px -176px; }
+css-1 .ui-icon-circle-plus { background-position: 0 -192px; }
+css-1 .ui-icon-circle-minus { background-position: -16px -192px; }
+css-1 .ui-icon-circle-close { background-position: -32px -192px; }
+css-1 .ui-icon-circle-triangle-e { background-position: -48px -192px; }
+css-1 .ui-icon-circle-triangle-s { background-position: -64px -192px; }
+css-1 .ui-icon-circle-triangle-w { background-position: -80px -192px; }
+css-1 .ui-icon-circle-triangle-n { background-position: -96px -192px; }
+css-1 .ui-icon-circle-arrow-e { background-position: -112px -192px; }
+css-1 .ui-icon-circle-arrow-s { background-position: -128px -192px; }
+css-1 .ui-icon-circle-arrow-w { background-position: -144px -192px; }
+css-1 .ui-icon-circle-arrow-n { background-position: -160px -192px; }
+css-1 .ui-icon-circle-zoomin { background-position: -176px -192px; }
+css-1 .ui-icon-circle-zoomout { background-position: -192px -192px; }
+css-1 .ui-icon-circle-check { background-position: -208px -192px; }
+css-1 .ui-icon-circlesmall-plus { background-position: 0 -208px; }
+css-1 .ui-icon-circlesmall-minus { background-position: -16px -208px; }
+css-1 .ui-icon-circlesmall-close { background-position: -32px -208px; }
+css-1 .ui-icon-squaresmall-plus { background-position: -48px -208px; }
+css-1 .ui-icon-squaresmall-minus { background-position: -64px -208px; }
+css-1 .ui-icon-squaresmall-close { background-position: -80px -208px; }
+css-1 .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+css-1 .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+css-1 .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+css-1 .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+css-1 .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+css-1 .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+css-1 .ui-corner-all,
+css-1 .ui-corner-top,
+css-1 .ui-corner-left,
+css-1 .ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+css-1 .ui-corner-all,
+css-1 .ui-corner-top,
+css-1 .ui-corner-right,
+css-1 .ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+css-1 .ui-corner-all,
+css-1 .ui-corner-bottom,
+css-1 .ui-corner-left,
+css-1 .ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+css-1 .ui-corner-all,
+css-1 .ui-corner-bottom,
+css-1 .ui-corner-right,
+css-1 .ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+css-1 .ui-widget-overlay {
+	background: #666666 url("images/ui-bg_diagonals-thick_20_666666_40x40.png") 50% 50% repeat;
+	opacity: .5;
+	filter: Alpha(Opacity=50); /* support: IE8 */
+}
+css-1 .ui-widget-shadow {
+	-webkit-box-shadow: -5px -5px 5px #000000;
+	box-shadow: -5px -5px 5px #000000;
+}
